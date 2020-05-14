@@ -73,41 +73,25 @@
                 <div class="col">Nama</div>
                 <div class="form-group col">
                     <input id="nama" class="form-control" placeholder="name here">
+                    <div id="m1"></div>
                 </div>
             </div>
             <div class="row ">
                 <div class="col">Jabatan</div>
                 <div class="form-group col">
                     <input id="jabatan" class="form-control" placeholder="jabatan here">
+                    <div id="m2"></div>
                 </div>
             </div>
              <div class="row ">
                 <div class="col">Nomer Kartu Identitas</div>
                 <div class="form-group col">
                     <input id="ktp" class="form-control" placeholder="ktp here">
+                    <div id="m3"></div>
                 </div>
             </div>
             </div>
-            <div id="muncul2">
-                <div class="row ">
-                    <div class="col">Nama</div>
-                    <div class="form-group col">
-                        <div id="m1"></div>
-                    </div>
-                </div>
-                <div class="row ">
-                    <div class="col">Jabatan</div>
-                    <div class="form-group col">
-                        <div id="m2"></div>
-                    </div>
-                </div>
-                 <div class="row ">
-                    <div class="col">Nomer Kartu Identitas</div>
-                    <div class="form-group col">
-                        <div id="m3"></div>
-                    </div>
-                </div>
-            </div>
+            
             <div >
                 Demikian Surat Dispensasi Perjalanan Tugas/Kerja  ini kami sampaikan, untuk digunakan sebagaimana mestinya. Terima kasih kami ucapkan atas perhatian dan kerjasamanya. 
             </div>
@@ -139,8 +123,11 @@
       
     <script>
        
-        myWindow.focus();
-        $('#muncul2').hide()
+       
+        $('#m1').hide()
+        $('#m2').hide()
+        $('#m3').hide()
+        
         $('#don').hide()
         $('#simpan').click(async ()=>{
             
@@ -155,9 +142,17 @@
             
             
             $('#ktp').blur()
-            $('#muncul1').hide()
+            
+            $('#nama').hide()
+            $('#jabatan').hide()
+            $('#ktp').hide()
+            
+            $('#m1').show()
+            $('#m2').show()
+            $('#m3').show()
+            
             $('#bawah1').hide()
-            $('#muncul2').show()
+            
             $('#m1').html(nama)
             $('#m2').html(jabatan)
             $('#m3').html(ktp)
