@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>Hello, world!</title>
+    <title>Probus Surat Tugas</title>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
     <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
@@ -16,14 +16,13 @@
       
     <style>
         .ukuran{
-            width: 595px;
-            height: 842px;
+           max-width: 1280px;
         }
         
     </style>
   </head>
-  <body class="container">
-    <div id="conta" class="container p-4  border ">
+  <body class="">
+    <div id="conta" class="container p-4  border my-4 col-lg-8 col-md-9">
         <div id="kepala" class="text-center text-muted">
             <img class="p-3" src="https://i.postimg.cc/wvKDh18k/logo-horizontal-1-2.png">
             <h5 class="">FINANCIAL IT AND ACCOUNTING SYSTEM CONSULTANT</h5>
@@ -139,9 +138,12 @@
     
       
     <script>
+       
+        myWindow.focus();
         $('#muncul2').hide()
         $('#don').hide()
         $('#simpan').click(async ()=>{
+            
             var nama = $('#nama').val()
             var jabatan = $('#jabatan').val()
             var ktp = $('#ktp').val()
